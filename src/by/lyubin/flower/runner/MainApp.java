@@ -1,4 +1,4 @@
-package by.lyubin.flower.runn;
+package by.lyubin.flower.runner;
 
 import by.lyubin.flower.bean.Flower;
 import by.lyubin.flower.logic.BotanicEncyclopedia;
@@ -23,7 +23,7 @@ public class MainApp {
         flower.wither(4, 1, 0, "grey");
         enc.printFlowerInfo(flower);
 
-        fortuneTeller.telFuture(" three ");
+        fortuneTeller.tellFuture(" three ");
         System.out.println(" ");
 
     }

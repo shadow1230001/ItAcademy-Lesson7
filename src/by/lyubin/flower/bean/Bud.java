@@ -21,7 +21,7 @@ public class Bud {
         return size;
     }
 
-    public void setSize(int size) {
+    void setSize(int size) {
         this.size = size;
     }
 
@@ -29,7 +29,7 @@ public class Bud {
         return color;
     }
 
-    public void setColor(String color) {
+    void setColor(String color) {
         this.color = color;
     }
 
@@ -44,7 +44,7 @@ public class Bud {
 
     }
 
-    public void fallLeaves() {
+    void fallLeaves() {
         if (leaves != null) {
             for (int i = 0; i < leaves.length; i++) {
                 if (i % 2 == 0) {

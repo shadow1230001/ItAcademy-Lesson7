@@ -18,21 +18,22 @@ public class BotanicEncyclopedia {
     }
 
     private void printLeaves(Bud bud) {
-        Leaf[] leaves = bud.getLeaves();
-        if (bud != null && leaves != null) {
-            for (Leaf leaf : leaves) {
-                if (leaf != null) {
-                    System.out.println("leaf color, shape:  " + leaf.getColor() + ", " + leaf.getShape());
-                } else {
-                    System.out.println(" Leaf fall");
+        if (bud != null) {
+            Leaf[] leaves = bud.getLeaves();
+            if (leaves != null) {
+                for (Leaf leaf : leaves) {
+                    if (leaf != null) {
+                        System.out.println("leaf color, shape:  " + leaf.getColor() + ", " + leaf.getShape());
+                    } else {
+                        System.out.println(" Leaf fall");
+                    }
                 }
-            }
 
-        } else if (bud != null) {
-            System.out.println("Leaves still not appear");
+            } else if (bud != null) {
+                System.out.println("Leaves still not appear");
+            }
         }
     }
-
 }
 
 

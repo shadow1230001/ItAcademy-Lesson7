@@ -4,7 +4,7 @@ public class Leaf {
     private String color;
     private String shape;
 
-    public Leaf(String color, String shape) {
+    Leaf(String color, String shape) {
         this.color = color;
         this.shape = shape;
     }
@@ -13,7 +13,7 @@ public class Leaf {
         return color;
     }
 
-    public void setColor(String color) {
+    void setColor(String color) {
         this.color = color;
     }
 

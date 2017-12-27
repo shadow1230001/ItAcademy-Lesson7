@@ -1,8 +1,8 @@
 package by.lyubin.flower.logic;
 
 public class FortuneTeller {
-    String[][] array = new String[3][];
-    int chamomileCountLeaves = 3;
+    private String[][] array = new String[3][];
+    private int chamomileCountLeaves = 3;
 
     public FortuneTeller() {
         array[0] = new String[]{"убьет", " не убьет", "сам умру"};
@@ -11,11 +11,11 @@ public class FortuneTeller {
         this.array = array;
     }
 
-    public void telFuture(String event) {
+    public void tellFuture(String event) {
         if (chamomileCountLeaves >= 1) {
             switch (event) {
                 case "one":
-                    telOne();
+                    tellOne();
                     break;
 
                 case "two":
@@ -31,18 +31,18 @@ public class FortuneTeller {
         }
     }
 
-    public void telOne() {
+    private void tellOne() {
         this.chamomileCountLeaves--;
         System.out.println(array[0][this.chamomileCountLeaves]);
     }
 
-    public void tellTwo() {
+    private void tellTwo() {
         this.chamomileCountLeaves--;
         System.out.println(array[1][this.chamomileCountLeaves]);
     }
 
 
-    public void tellThree() {
+    private void tellThree() {
         this.chamomileCountLeaves--;
         System.out.println(array[2][this.chamomileCountLeaves]);
 
